@@ -18,20 +18,20 @@
                     <span>Users</span></a>
             </li>
 
-            {{-- <li class="nav-item">
+            <li class="nav-item">
                 <a href="{{ route('companies.show', 1) }}" class="nav-link">
                     <i class="fas fa-columns"></i>
                     <span>Company</span>
                 </a>
             </li>
-            <li class="nav-item">
+            {{-- <li class="nav-item">
                 <a href="{{ route('attendances.index') }}" class="nav-link">
                     <i class="fas fa-columns"></i>
                     <span>Attendances</span>
                 </a>
-            </li>
+            </li> --}}
 
-            <li class="nav-item">
+            {{-- <li class="nav-item">
                 <a href="{{ route('permissions.index') }}" class="nav-link">
                     <i class="fas fa-columns"></i>
                     <span>Permission</span>
