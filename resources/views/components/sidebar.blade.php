@@ -7,19 +7,36 @@
             <a href="index.html">St</a>
         </div>
         <ul class="sidebar-menu">
-            <li class="menu-header">Dashboard</li>
-            <li class="nav-item dropdown ">
-                <a href="#"
-                    class="nav-link has-dropdown"><i class="fas fa-fire"></i><span>Dashboard</span></a>
-                <ul class="dropdown-menu">
-                    <li class='{{ Request::is('dashboard-general-dashboard') ? 'active' : '' }}'>
-                        <a class="nav-link"
-                            href="{{ url('dashboard-general-dashboard') }}">General Dashboard</a>
-                    </li>
-                </ul>
+
+            <li class="nav-item  ">
+                <a href="#" class="nav-link has-dropdown"><i class="fas fa-fire"></i><span>Dashboard</span></a>
+
             </li>
 
-        </ul>
+            <li class="nav-item ">
+                <a href="{{ route('users.index') }}" class="nav-link "><i class="fas fa-columns"></i>
+                    <span>Users</span></a>
+            </li>
+
+            {{-- <li class="nav-item">
+                <a href="{{ route('companies.show', 1) }}" class="nav-link">
+                    <i class="fas fa-columns"></i>
+                    <span>Company</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="{{ route('attendances.index') }}" class="nav-link">
+                    <i class="fas fa-columns"></i>
+                    <span>Attendances</span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a href="{{ route('permissions.index') }}" class="nav-link">
+                    <i class="fas fa-columns"></i>
+                    <span>Permission</span>
+                </a>
+            </li> --}}
 
     </aside>
 </div>
